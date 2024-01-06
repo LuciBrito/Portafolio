@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Seccion Nav */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 15px;
+}
+nav a{
+    text-decoration: none;
+}
+.section_icons img{
+    width: 30px;
+}
+
+/* Fin Nav */
+
+/* Seccion Perfil */
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    margin: 0 auto;
+    width: 100%;
+}
+.perfil .perfil_info{
+    width: auto;
+    padding-left: 10%;
+}
+.perfil .perfil_info h1{
+    font-size: 35px;
+}
+.perfil .perfil_info p{
+    font-size: 20px;
+}
+.perfil .perfil_foto img{
+    padding-top: 8%;
+    width:70%;
+    /* max-width: 350px; */
+    border-radius: 10%;
+}
+
+/* Fin Perfil */
+
+
+/* Seccion Project */
+.project{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+.card .card_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+/* Fin Project */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    
+    .section_persona{
+        display: none;
+    }
+
+    .perfil{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .perfil .perfil_info h1{
+        font-size: 28px;
+    }
+    .perfil .perfil_info p{
+        font-size: 15px;
+    }
+    .perfil .perfil_foto{
+        display: flex;
+        justify-content: center;
+
+    }
+    .perfil .perfil_foto img{
+        width: 250px;
+        padding: 0;
+    }
+  }
